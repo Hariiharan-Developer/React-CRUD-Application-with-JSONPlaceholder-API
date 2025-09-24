@@ -92,7 +92,7 @@ const CRUD = () => {
             })
         }).catch((error)=>{
             console.log(error.message)
-            toast.error(error.message,{
+            toast.error('User update failed',{
                 style:{backgroundColor:'black',color:"white"}
             })
         })
@@ -118,7 +118,7 @@ const CRUD = () => {
         })
         .catch((error)=>{
             console.log(error.message)
-            toast.error(error.message,{
+            toast.error('user delete failed',{
                 style:{backgroundColor:'black',color:'white'}
             })
         })
@@ -130,7 +130,7 @@ const CRUD = () => {
     <div className='container'>
       <h3 className='mt-2 text-center'>CRUD operation with JSON placeholder</h3>
       <br/>
-      <table className="table table-bordered table-hover">
+      <table className="table table-bordered table-hover ">
   <thead>
     <tr>
       <th scope="col">ID</th>
